@@ -1,0 +1,22 @@
+/*CSS for Math Site*/
+
+/*Container*/
+#container
+{
+    width: 1000px;
+    border: 1px solid grey;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+
+/*Header of the webpage*/
+h1 a
+{
+    font-size: 50px;
+    font-weight: 100;
+    color: #861BBF;
+    text-decoration: none;
+    
+}
