@@ -75,3 +75,14 @@ h1 a
 {
     clear: both;
 }
+
+
+/*List below the header and search box*/
+#menu ul li
+{
+    float: left;
+}
+ul
+{
+    list-style: none;
+}
