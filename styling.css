@@ -178,7 +178,7 @@ ul
 /*Sidebars*/
 .sidebar
 {
-    height: 500px;
+    height: 550px;
     width: 425px;
     border: 1px solid #BAF46F;
     border-radius: 20px;
@@ -223,7 +223,7 @@ ul
 #left-sidebar ul li
 {
     padding: 4px 20px 20px 0;
-    padding-bottom: 6px;
+    padding-bottom: 3px;
     padding-left: 10px;
     list-style-image: url(/Images/outline_arrow_circle_right_black_24dp.png); 
 }
@@ -241,4 +241,17 @@ ul
     padding-left: 60px;
     padding: 5px 0 20px 70px;
     background: url(/Images/outline_done_all_black_24dp.png) no-repeat;
+}
+
+
+
+
+
+/*Footer*/
+.footer
+{
+    height: 60px;
+    background: linear-gradient(#F6F390, #D5D533);
+    padding: 10px 30px;
+    margin-top: 15px;
 }
