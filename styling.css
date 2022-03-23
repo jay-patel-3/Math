@@ -139,3 +139,26 @@ ul
     font-weight: bold;
     color: #8314DB;
 }
+
+
+
+
+
+/*Website Body (Header and paragraph)*/
+#Intro
+{
+    background: linear-gradient(#E5F2BB, #B7E952);
+    padding: 30px;
+    margin: 16px 0; /*First value is margins Top and Bottom*/
+}
+#Intro h3
+{
+    font-size: 45px;
+    color: #316901;
+    font-weight: normal;
+}
+#Intro p
+{
+    font-size: 20px;
+    color: #789450;
+}
