@@ -176,16 +176,6 @@ ul
 
 
 /*Sidebars*/
-#left-sidebar
-{
-    float: left;
-}
-#right-sidebar
-{
-    float: right;
-}
-
-
 .sidebar
 {
     height: 500px;
@@ -194,22 +184,10 @@ ul
     border-radius: 20px;
     padding: 10px 30px;
 }
-
 .sidebar h3
 {
     color: #B314DB;
     font-size: 30px;
-}
-
-#left-sidebar ul
-{
-    padding-top: 10px;
-}
-#left-sidebar ul li
-{
-    padding-bottom: 6px;
-    padding-left: 10px;
-    list-style-image: url(/Images/outline_arrow_circle_right_black_24dp.png); 
 }
 
 /*'.sidebar ul li a ' or '.sidebar a' are both valid syntaxes*/
@@ -231,4 +209,36 @@ ul
     color: #8314DB;
     font-size: 23px;
     font-weight: bold;   
+}
+
+
+#left-sidebar
+{
+    float: left;
+}
+#left-sidebar ul
+{
+    padding-top: 10px;
+}
+#left-sidebar ul li
+{
+    padding: 4px 20px 20px 0;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    list-style-image: url(/Images/outline_arrow_circle_right_black_24dp.png); 
+}
+
+
+#right-sidebar
+{
+    float: right;
+}
+
+#right-sidebar ul li
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 60px;
+    padding: 5px 0 20px 70px;
+    background: url(/Images/outline_done_all_black_24dp.png) no-repeat;
 }
