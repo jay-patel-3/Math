@@ -1,9 +1,12 @@
 /*CSS for Math Site*/
-
+body
+{
+    font: Arial, Helvetica, sans-serif;
+}
 #container
 {
-    width: 1050px;
-    border: 3px solid grey;
+    width: 1000px;
+    /* border: 1px solid grey; */
     /* height: 100px; */
     margin: 0 auto;
 }
@@ -25,7 +28,7 @@ h1 a
     padding: 10px 0;
 }
 
-#math-brand
+#math_brand
 {
     float: left;
 }
@@ -38,10 +41,10 @@ h1 a
 {
     float: right;
     background: linear-gradient(#E4F2B9, #87E953);
-    width: 300px;
+    width: 400px;
     height: 50px;
     padding: 20px 20px 0 20px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 
@@ -57,7 +60,7 @@ h1 a
 
     /*Google Material*/
     background: white url(Images/outline_search_black_12dp.png) right center no-repeat;
-
+    border: 1px solid #C8D03E;
 }
 .math-submit
 {
@@ -79,10 +82,26 @@ h1 a
 }
 
 
+
+
 /*List below the header and search box*/
+#menu
+{
+    height: 70px;
+    background: linear-gradient(#F8F594, #D5D533);
+}
 #menu ul li
 {
     float: left;
+    padding: 0 10px;
+}
+#menu ul li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #5D12E7;
+    padding: 0 30px;
 }
 ul
 {
