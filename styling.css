@@ -2,7 +2,7 @@
 
 #container
 {
-    width: 1000px;
+    width: 1050px;
     border: 3px solid grey;
     /* height: 100px; */
     margin: 0 auto;
@@ -66,6 +66,8 @@ h1 a
     font-weight: bold;
     color: white;
     background: #A751D6;
+    font-size: 15px;
+    border: 1px solid #DCD5E1;
 }
 
 
