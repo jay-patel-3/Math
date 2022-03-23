@@ -98,6 +98,7 @@ h1 a
 }
 ul
 {
+    /*Takes effect on other lists as well*/
     list-style: none;
 }
 
@@ -183,11 +184,51 @@ ul
 {
     float: right;
 }
+
+
 .sidebar
 {
     height: 500px;
-    width: 450px;
+    width: 425px;
     border: 1px solid #BAF46F;
     border-radius: 20px;
     padding: 10px 30px;
+}
+
+.sidebar h3
+{
+    color: #B314DB;
+    font-size: 30px;
+}
+
+#left-sidebar ul
+{
+    padding-top: 10px;
+}
+#left-sidebar ul li
+{
+    padding-bottom: 6px;
+    padding-left: 10px;
+    list-style-image: url(/Images/outline_arrow_circle_right_black_24dp.png); 
+}
+
+/*'.sidebar ul li a ' or '.sidebar a' are both valid syntaxes*/
+.sidebar ul li a 
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #5D12E7;
+    
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease; 
+}
+.sidebar ul li a:hover, .sidebar ul li a.active
+{
+    text-decoration: none;
+    color: #8314DB;
+    font-size: 23px;
+    font-weight: bold;   
 }
