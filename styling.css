@@ -6,7 +6,7 @@ body
 #container
 {
     width: 1000px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     /* height: 100px; */
     margin: 0 auto;
 }
@@ -160,5 +160,34 @@ ul
 #Intro p
 {
     font-size: 20px;
-    color: #789450;
+    color: #628F19;
+
+    /*justify means your text has a completely even, straight 
+    edge at the left margin, and a ragged right edge due to word wrap*/
+    text-align: justify; 
+}
+
+
+
+
+
+
+
+
+/*Sidebars*/
+#left-sidebar
+{
+    float: left;
+}
+#right-sidebar
+{
+    float: right;
+}
+.sidebar
+{
+    height: 500px;
+    width: 450px;
+    border: 1px solid #BAF46F;
+    border-radius: 20px;
+    padding: 10px 30px;
 }
