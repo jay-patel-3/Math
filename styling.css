@@ -6,7 +6,7 @@ body
 #container
 {
     width: 1000px;
-    /* border: 1px solid grey; */
+    border: 1px solid grey;
     /* height: 100px; */
     margin: 0 auto;
 }
@@ -84,16 +84,37 @@ h1 a
 
 
 
+
+
+
 /*List below the header and search box*/
 #menu
 {
     height: 70px;
     background: linear-gradient(#F8F594, #D5D533);
+    
+    /*Padding for the whole menu list*/
+    padding: 7px 0; /*(Top, Bottom) & (Left, Right) respectively*/
 }
+ul
+{
+    list-style: none;
+}
+
 #menu ul li
 {
     float: left;
-    padding: 0 10px;
+    padding: 0 30px;
+    height: 20px;
+    border-right: 1px solid #5D12E7;    /*Lines for the menu*/
+    line-height: 30px;
+}
+
+
+/*Last Border Line on the menu*/
+#menu ul li:last-child
+{
+    border-right: none;
 }
 #menu ul li a
 {
@@ -101,9 +122,13 @@ h1 a
     text-transform: uppercase;
     font-size: 17px;
     color: #5D12E7;
-    padding: 0 30px;
+
+    /*When linear, the duration is the same from beginning to end*/
+    transition: font-size 0.3s linear;    
 }
-ul
+#menu ul li a:hover, #menu ul li a.active
 {
-    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8314DB;
 }
