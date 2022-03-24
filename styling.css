@@ -149,6 +149,10 @@ ul
 #Intro
 {
     background: linear-gradient(#E5F2BB, #B7E952);
+    background: -webkit-linear-gradient(#E5F2BB, #B7E952);
+    background: -o-linear-gradient(#E5F2BB, #B7E952);
+    background: -moz-linear-gradient(#E5F2BB, #B7E952);
+
     padding: 30px;
     margin: 16px 0; /*First value is margins Top and Bottom*/
 }
@@ -251,7 +255,12 @@ ul
 .footer
 {
     height: 60px;
+
     background: linear-gradient(#F6F390, #D5D533);
+    background: -webkit-linear-gradient(#F6F390, #D5D533);
+    background: -o-linear-gradient(#F6F390, #D5D533);
+    background: -moz-linear-gradient(#F6F390, #D5D533);
+    
     padding: 10px 30px;
     margin-top: 15px;
 }
