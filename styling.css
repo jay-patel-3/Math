@@ -1,14 +1,24 @@
 /*CSS for Math Site*/
+*
+{
+    box-sizing: border-box;
+}
 body
 {
     font: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 #container
 {
-    width: 1000px;
+    width: 90%;
+    /* width: 1000px; */
     /* border: 1px solid grey; */
     /* height: 100px; */
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 
@@ -24,13 +34,17 @@ h1 a
 }
 #math-header
 {
-    height: 100px;
+    /* height: 100px; */
     padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #math_brand
 {
-    float: left;
+    /* float: left; */
+    flex: 50%;
+    min-width: 400px;
 }
 
 
@@ -39,12 +53,25 @@ h1 a
 /*Search*/
 #search-box
 {
-    float: right;
+    /* float: right; */
+
+    flex: 50%; /*1 can also be used instead of 50% for flex*/
     background: linear-gradient(#E4F2B9, #87E953);
-    width: 400px;
-    height: 50px;
-    padding: 20px 20px 0 20px;
-    margin-top: 20px;
+    
+    /* width: 400px; */
+
+    min-width: 400px;
+
+    /* height: 50px; */
+
+    padding: 20px;
+
+    /* margin-top: 20px; */
+
+    /*Flex properties*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -90,25 +117,31 @@ h1 a
 /*List below the header and search box*/
 #menu
 {
-    height: 70px;
+    /* height: 70px; */
+
     background: linear-gradient(#F8F594, #D5D533);
     
     /*Padding for the whole menu list*/
-    padding: 7px 0; /*(Top, Bottom) & (Left, Right) respectively*/
-}
-ul
-{
-    /*Takes effect on other lists as well*/
-    list-style: none;
-}
+    padding: 20px 0; /*(Top, Bottom) & (Left, Right) respectively*/
 
-#menu ul li
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ul
 {
-    float: left;
+    Takes effect on other lists as well
+    list-style: none;
+} */
+
+/* #menu ul li */
+#menu a
+{
+    /*No need to use float with flex properties*/
+    /* float: left; */
+
     padding: 0 30px;
     height: 30px;
     border-right: 1px solid #5D12E7;    /*Lines for the menu*/
-    line-height: 30px;
 }
 
 
@@ -134,12 +167,31 @@ ul
     -o-transition: font-size 0.3s ease;
     -ms-transition: font-size 0.3s ease; */
 }
-#menu ul li a:hover, #menu ul li a.active
+/* #menu ul li a:hover, #menu ul li a.active */
+#menu a:hover, #menu a.active
 {
     font-size: 20px;
     font-weight: bold;
     color: #8314DB;
 }
+
+
+
+
+
+/*small screen: vertical menu*/
+@media screen and (max-width: 700px){
+    #menu
+    {
+        flex-direction: column;
+        align-content: center;
+    }
+    #menu a
+    {
+        border-right: none;
+    }
+}
+
 
 
 
@@ -180,11 +232,21 @@ ul
 
 
 /*Sidebars*/
+.sidebars
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar-wrapper
+{
+    padding: 5px;
+    flex: 50%;
+}
 .sidebar
 {
-    height: 550px;
-    width: 425px;
-    border: 1px solid #BAF46F;
+    height: 100%;
+    width: 100%; 
+    border: 1px solid #BAF46F; 
     border-radius: 20px;
     padding: 10px 30px;
 }
@@ -216,10 +278,10 @@ ul
 }
 
 
-#left-sidebar
+/* #left-sidebar
 {
     float: left;
-}
+} */
 #left-sidebar ul
 {
     padding-top: 10px;
@@ -233,10 +295,10 @@ ul
 }
 
 
-#right-sidebar
+/* #right-sidebar
 {
     float: right;
-}
+} */
 
 #right-sidebar ul li
 {
@@ -262,5 +324,5 @@ ul
     background: -moz-linear-gradient(#F6F390, #D5D533);
     
     padding: 10px 30px;
-    margin-top: 15px;
+    margin-top: auto;
 }
